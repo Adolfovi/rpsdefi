@@ -11,6 +11,7 @@
 
 <body>
     <div id="container">
+        <div id="points1">Puntos: <span id="points">100</span></div>
         <h1>Elige una opción</h1>
         <div id="buttons">
             <button id="boton1" onclick="piedra()" >Piedra</button>
@@ -30,6 +31,16 @@
 
 
     <style>
+
+
+        #points1{
+            position: absolute;
+            right: 5px;
+            top: 0;
+
+
+
+        }
         body {
             font-family: Comic Sans MS;
             background-color: #e4feff;
@@ -80,6 +91,13 @@
             border: 4px solid black;
             border-radius: 10px;
         }
+@media only screen and (max-width: 321px) {
+  #buttons {
+    flex-direction: column;
+  }
+}
+
+
     </style>
 </body>
 
